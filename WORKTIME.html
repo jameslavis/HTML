@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> WORKTIME</title>
+<style>
+
+</style>
+
+</head>
+<body>
+<button onclick="signupinfo()">signup</button>
+<button onclick="login()">login</button>
+<script>
+function signupinfo(){
+var signup=prompt("create your user name ");
+localStorage.setItem("name", signup);
+var signup2=prompt("what is your email ");
+localStorage.setItem("email", signup2);
+var signup3=prompt("create you password ");
+localStorage.setItem("password", signup3);
+}
+function login(){
+var email=localStorage.getItem("email");
+var password=localStorage.getItem("password");
+var login1=prompt("what is you email");
+var password1=prompt("what is your password");
+if(login1==email||password1==password){
+alert("welcome back user ");
+}else{
+alert("create a account ");
+}
+</script>
+</body>
+</html>
