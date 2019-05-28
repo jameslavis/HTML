@@ -12,11 +12,11 @@
 <script>
 function signupinfo(){
 var signup=prompt("create your user name ");
-localStorage.setItem("name", signup);
 var signup2=prompt("what is your email ");
-localStorage.setItem("email", signup2);
 var signup3=prompt("create you password ");
-localStorage.setItem("password", signup3);
+  localStorage.setItem("name", signup);
+  localStorage.setItem("email", signup2);
+  localStorage.setItem("password", signup3);
 }
 function login(){
 var email=localStorage.getItem("email");
